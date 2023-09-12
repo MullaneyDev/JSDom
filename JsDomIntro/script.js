@@ -22,6 +22,7 @@ const imgSubmit = document.getElementById("imgSubmit");
 
 imgSubmit.addEventListener('click', () => {
     imgChange.src = imgInput.value;
+    imgInput.value = ""
 });
 
 
@@ -33,7 +34,8 @@ const colourSubmit = document.getElementById("colourSubmit");
 
 colourSubmit.addEventListener('click', () =>{
     for (let header of headers){
-      header.style.color = colourInput.value;   
+      header.style.color = colourInput.value;
+      colourInput.value = "";   
     }
 });
 
