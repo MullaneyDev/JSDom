@@ -205,7 +205,7 @@ resetButton.addEventListener("click", () => {
   result.innerHTML = "";
   player1 = true;
   player2 = false;
-      gameWindow.style.opacity = 1;
+  gameWindow.style.opacity = 1;
   player1Window.style.opacity = 1;
   player2Window.style.opacity = 0.2;
 });

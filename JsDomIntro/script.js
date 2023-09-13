@@ -34,9 +34,8 @@ const colourSubmit = document.getElementById("colourSubmit");
 
 colourSubmit.addEventListener('click', () =>{
     for (let header of headers){
-      header.style.color = colourInput.value;
-      colourInput.value = "";   
-    }
+      header.style.color = colourInput.value;  
+    } colourInput.value = ""; 
 });
 
 
