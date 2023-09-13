@@ -1,0 +1,122 @@
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background:linear-gradient(to right, cadetblue 0%, cadetblue 50%, wheat 50%, wheat 100% );
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    width: 600px;
+    margin: 10px;
+}
+
+.gameWindow {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border: 5px solid black;
+    background-color: antiquewhite;
+}
+
+#player1 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+}
+
+#player2 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.window {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.diceWindow{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    position: relative;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25) ;
+}
+
+.diceDot {
+    --top: 0%;
+    --left: 0%;
+    width: 80px;
+    height: 80px;
+    background-color: wheat;
+    border-radius: 50%;
+    position: absolute;
+    top: var(--top);
+    left: var(--left);
+    transform: translateX(calc(var(--left) * -1)) translateY(calc(var(--top) * -1));
+}
+
+.scoreWindow1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: greenyellow;
+    border: 2px solid green;
+    width: 400px;
+}
+
+.scoreWindow2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: greenyellow;
+    border: 2px solid green;
+    width: 400px;
+}
+
+.rollDiceButton {
+    margin: 10px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+}
+
+.rollDiceButton:hover {
+    background-color: lightgreen;
+}
+
+.holdScoreButton {
+    margin: 10px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+}
+
+.holdScoreButton:hover {
+    background-color: lightcoral;
+}
+
+.reset {
+    align-self: center;
+    margin: 10px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    background-color: coral;
+}
+
+.reset:hover {
+    background-color: crimson;
+}

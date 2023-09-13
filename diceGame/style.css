@@ -2,6 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: antiquewhite;
 }
 
 .gameWindow {
@@ -9,6 +10,7 @@ body{
     flex-direction: column;
     align-self: center;
     border: 5px solid black;
+    background-color: white;
 }
 
 .diceWindow{
@@ -44,9 +46,18 @@ body{
 }
 .rollDiceButton {
     margin: 10px;
+    cursor: pointer;
+}
+.rollDiceButton:hover {
+    background-color: greenyellow;   
 }
 
 .reset {
     margin: 10px;
     align-self: center;
+    cursor: pointer;
+}
+
+.reset:hover {
+    background-color: firebrick;
 }

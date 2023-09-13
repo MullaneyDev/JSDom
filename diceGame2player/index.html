@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game 2Player</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="instructions">
+    <h1>Welcome to the 2 player dice game!</h1>
+    <h2>Get a score of 21 to win!</h2>
+    <p>Roll the dice as many times as you like<br>Press the hold button to store your score and pass the turn to the next player<br>If you roll a one you lose your current score and the turn passes to the next player</p>
+    </header>
+    <section class="window"> 
+
+        <div id="player1">
+            <h2>Player 1</h2>
+            <div class="currentScoreWindow1">
+                <h1> Current Score:</h1>
+                <h1 id="currentScore1">0</h1>
+            </div>
+            <div class="scoreWindow1">
+            <p>Stored Score :</p>
+            <h3 id="score1">0</h1>
+            <p></p>
+            <p>Rolls :</p>
+            <h3 id="count1">0</h3>
+            <p>Total Wins :</p>
+            <h3 id="wins1">0</h3>
+            </div>
+        </div>
+
+        <div class="gameWindow">
+            <div class="diceWindow">
+            </div>
+            <section class="buttons">
+                <button type="button" class="rollDiceButton">Roll the dice</button>
+                <button type="button" class="holdScoreButton">Hold</button>
+            </section>
+        </div>
+
+        <div id="player2">
+            <h2>Player 2</h2>
+            <div class="currentScoreWindow2">
+                <h1> Current Score:</h1>
+                <h1 id="currentScore2">0</h1>
+            </div>
+            <div class="scoreWindow2">
+                <p>Stored Score :</p>
+                <h3 id="score2">0</h1>
+                <p></p>
+                <p>Rolls :</p>
+                <h3 id="count2">0</h3>
+                <p>Total Wins :</p>
+                <h3 id="wins2">0</h3>
+            </div>
+        </div>
+
+    </section>
+
+    <button type="button" class="reset">reset</button>
+
+<footer id="resultWindow">
+    <h1 id="result"></h1>
+</footer>
+    <script src="./script.js"></script>
+</body>
+</html>

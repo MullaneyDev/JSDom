@@ -1,0 +1,46 @@
+.box {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#header {
+    background-color: wheat;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+}
+
+#controlBar {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+#options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 480px;
+    height: 330px;
+}
+
+#newColBtn:hover {
+    background-color: aquamarine;
+}
