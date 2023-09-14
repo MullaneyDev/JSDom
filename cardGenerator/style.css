@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+#cardDisplay {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid;
+    align-items: center;
+    justify-content: space-around;
+    width: 230px;
+    height: 170px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card {  
+  position: relative;
+  width: 105px;
+  height: 150px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+/* sets the card display */
+.card1 {  
+  position: relative;
+  width: 105px;
+  height: 150px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+.card-value-suit {
+  display: inline-block;
+  position: absolute;
+}
+
+.card-value-suit.top {
+  top: 5px;
+  left: 5px;
+}
+/* displays the value at the top */
+.card-value-suit.bot {
+  transform: rotate(180deg);
+  bottom: 5px;
+  right: 5px
+}
+/* displays the value at the bottom */
+.card-suit {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25%;
+}
+/* displays the suit in the middle */
+.card.spades,
+.card.clubs {
+  color: black;
+}
+/* sets the colour for the black cards */
+.card.hearts,
+.card.diamonds {
+  color: red;
+}
+/* sets the colour for the red cards */
+
+#generateCards:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
