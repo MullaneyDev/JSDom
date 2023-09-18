@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.gameBoard {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 480px;
+    height: 480px;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: beige;
+    text-align: center;
+    font-size: 800%;
+}
+
